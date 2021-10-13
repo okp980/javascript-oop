@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Volkhov:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-poppins;
+	}
+}
+@layer utilities {
+	.h200 {
+		height: 700px;
+	}
+	.trans100vw {
+		transform: translateX(100vw);
+	}
+}
+@layer components {
+	.btn {
+		@apply bg-yellow-500 py-2 px-4 text-gray-100 rounded-sm hover:bg-yellow-400 cursor-pointer transition uppercase;
+	}
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body class="bg-gray-200 overflow-x-hidden">
+		<!-- header -->
+		<header class="sticky top-0 z-50 h-20 bg-yellow-600">
+			<div
+				class="container mx-auto flex justify-between px-3 py-5 items-center"
+			>
+				<!-- logo -->
+				<div class="text-3xl text-gray-100 relative z-20">
+					Build<span class="text-gray-700">body</span>
+				</div>
+				<nav class="">
+					<!-- cart button -->
+					<span
+						class="
+							group
+							bg-gray-700
+							py-2
+							px-4
+							rounded
+							text-gray-100
+							font-semibold
+							uppercase
+							cursor-pointer
+							relative
+							z-20
+							flex
+							items-center
+							transition
+							hover:bg-gray-300 hover:text-yellow-600
+						"
+						>cart
+						<span
+							class="
+								transition
+								bg-yellow-600
+								font-light
+								rounded-full
+								flex
+								items-center
+								justify-center
+								h-8
+								w-8
+								ml-1
+								text-xs
+								relative
+								group-hover:bg-gray-600 group-hover:text-gray-300
+							"
+							>10</span
+						></span
+					>
+					<!-- end of cart button -->
+					<!-- cart menu -->
+					<div
+						class="
+							absolute
+							top-20
+							right-0
+							w-full
+							md:w-1/2
+							h-screen
+							bg-yellow-500
+							trans100vw
+						"
+					>
+						<h2
+							class="
+								uppercase
+								text-center text-2xl
+								font-semibold
+								text-gray-700
+								mt-12
+								mb-2
+							"
+						>
+							cart items
+						</h2>
+						<ul>
+							<!-- cart items -->
+							<li class="flex bg-gray-300 p-4">
+								<!-- image container -->
+								<div class="w-40 mr-2">
+									<img src="img/dumbells.jpg" alt="" />
+								</div>
+								<!-- end of image container -->
+								<!-- product details -->
+								<div class="flex-1">
+									<h3 class="text-gray-800 capitalize mb-1">
+										useful dumbell - 50kg
+									</h3>
+									<p class="mb-2 capitalize text-sm text-gray-600">
+										quantity:<span>2</span>
+									</p>
+									<!-- counter -->
+									<span
+										class="
+											px-2
+											py-1
+											bg-yellow-500
+											cursor-pointer
+											transition
+											hover:bg-yellow-300
+										"
+										>+</span
+									><span class="px-2 py-1 bg-yellow-100">2</span
+									><span
+										class="
+											px-2
+											py-1
+											bg-yellow-500
+											cursor-pointer
+											hover:bg-yellow-300
+										"
+										>-</span
+									>
+									<!-- end of counter -->
+								</div>
+								<!-- end of product details -->
+								<!-- delete product -->
+								<div class="flex items-center">
+									<button
+										class="
+											btn
+											text-xs
+											rounded-full
+											bg-red-600
+											px-2
+											py-1
+											hover:bg-red-400
+										"
+									>
+										remove
+									</button>
+								</div>
+								<!-- end of delete product -->
+							</li>
+							<!-- end of cart items -->
+							<!-- cart items -->
+							<li class="flex bg-gray-300 p-4">
+								<!-- image container -->
+								<div class="w-40 mr-2">
+									<img src="img/dumbells.jpg" alt="" />
+								</div>
+								<!-- end of image container -->
+								<!-- product details -->
+								<div class="flex-1">
+									<h3 class="text-gray-800 capitalize mb-1">
+										useful dumbell - 50kg
+									</h3>
+									<p class="mb-2 capitalize text-sm text-gray-600">
+										quantity:<span>2</span>
+									</p>
+									<!-- counter -->
+									<span class="px-2 py-1 bg-yellow-500">+</span
+									><span class="px-2 py-1 bg-yellow-100">2</span
+									><span class="px-2 py-1 bg-yellow-500">-</span>
+									<!-- end of counter -->
+								</div>
+								<!-- end of product details -->
+								<!-- delete product -->
+								<div class="flex items-center">
+									<button class="btn text-xs rounded-full bg-red-400 px-2 py-1">
+										remove
+									</button>
+								</div>
+								<!-- end of delete product -->
+							</li>
+							<!-- end of cart items -->
+							<!-- cart items -->
+							<li class="flex bg-gray-300 p-4">
+								<!-- image container -->
+								<div class="w-40 mr-2">
+									<img src="img/dumbells.jpg" alt="" />
+								</div>
+								<!-- end of image container -->
+								<!-- product details -->
+								<div class="flex-1">
+									<h3 class="text-gray-800 capitalize mb-1">
+										useful dumbell - 50kg
+									</h3>
+									<p class="mb-2 capitalize text-sm text-gray-600">
+										quantity:<span>2</span>
+									</p>
+									<!-- counter -->
+									<span class="px-2 py-1 bg-yellow-500">+</span
+									><span class="px-2 py-1 bg-yellow-100">2</span
+									><span class="px-2 py-1 bg-yellow-500">-</span>
+									<!-- end of counter -->
+								</div>
+								<!-- end of product details -->
+								<!-- delete product -->
+								<div class="flex items-center">
+									<button class="btn text-xs rounded-full bg-red-400 px-2 py-1">
+										remove
+									</button>
+								</div>
+								<!-- end of delete product -->
+							</li>
+							<!-- end of cart items -->
+						</ul>
+					</div>
+					<!-- end of cart menu -->
+				</nav>
+			</div>
+		</header>
+		<!-- hero -->
+		<section
+			class="
+				mx-auto
+				px-6
+				bg-hero bg-cover bg-right
+				h200
+				flex flex-col
+				items-center
+				justify-center
+				bg-opacity-100
+			"
+		>
+			<h1
+				class="
+					text-yellow-500 text-4xl
+					md:text-6xl
+					lg:text-8xl
+					capitalize
+					font-volkhoz
+				"
+			>
+				100% discount offers
+			</h1>
+			<h3 class="text-gray-400 uppercase font-light md:text-xl mb-3">
+				starting oct. 1st - nov. 15th
+			</h3>
+			<button class="btn md:px-12 md:py-4 md:text-2xl">shop now</button>
+		</section>
+		<!-- end of hero -->
+		<!-- products section-->
+		<section class="container mx-auto p-4">
+			<!-- product head -->
+			<div class="py-10">
+				<!-- categories -->
+				<ul
+					class="
+						flex
+						justify-around
+						uppercase
+						bg-gray-400
+						mx-auto
+						max-w-screen-sm
+						text-gray-100 text-xs
+						shadow-md
+					"
+				>
+					<li
+						class="
+							p-4
+							cursor-pointer
+							font-bold
+							flex-1
+							text-center
+							bg-yellow-500
+						"
+					>
+						all
+					</li>
+					<li
+						class="
+							p-4
+							cursor-pointer
+							flex-1
+							text-center
+							hover:bg-gray-700
+							transition
+						"
+					>
+						equipments
+					</li>
+					<li class="p-4 cursor-pointer flex-1 text-center">kits</li>
+					<li class="p-4 cursor-pointer flex-1 text-center">food</li>
+				</ul>
+				<!-- end of categories -->
+			</div>
+			<!-- end of product head -->
+			<!-- product list -->
+			<div
+				class="
+					grid grid-cols-1
+					justify-items-center
+					gap-4
+					md:grid-cols-2
+					lg:grid-cols-4
+				"
+			>
+				<!-- single product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+				<div
+					class="
+						group
+						w-64
+						md:w-full
+						bg-gray-300
+						rounded-md
+						overflow-hidden
+						shadow-md
+					"
+				>
+					<!-- image container -->
+					<div class="w-full overflow-hidden">
+						<img
+							src="img/dumbells.jpg"
+							alt="dumbells"
+							class="w-full transform transition group-hover:scale-125"
+						/>
+					</div>
+					<!-- end of image container -->
+					<!-- product content -->
+					<div class="p-4">
+						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
+						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
+						<button class="btn">add to cart</button>
+					</div>
+					<!-- end of product content -->
+				</div>
+				<!-- end of product -->
+			</div>
+			<!-- end of product list -->
+		</section>
+		<!-- end of products section -->
+	</body>
+</html>
