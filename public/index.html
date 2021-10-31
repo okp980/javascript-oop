@@ -21,6 +21,7 @@
 				<nav class="">
 					<!-- cart button -->
 					<span
+						id="cart-button"
 						class="
 							group
 							bg-gray-700
@@ -61,6 +62,7 @@
 					<!-- end of cart button -->
 					<!-- cart menu -->
 					<div
+						id="cart"
 						class="
 							absolute
 							top-20
@@ -84,129 +86,7 @@
 						>
 							cart items
 						</h2>
-						<ul>
-							<!-- cart items -->
-							<li class="flex bg-gray-300 p-4">
-								<!-- image container -->
-								<div class="w-40 mr-2">
-									<img src="img/dumbells.jpg" alt="" />
-								</div>
-								<!-- end of image container -->
-								<!-- product details -->
-								<div class="flex-1">
-									<h3 class="text-gray-800 capitalize mb-1">
-										useful dumbell - 50kg
-									</h3>
-									<p class="mb-2 capitalize text-sm text-gray-600">
-										quantity:<span>2</span>
-									</p>
-									<!-- counter -->
-									<span
-										class="
-											px-2
-											py-1
-											bg-yellow-500
-											cursor-pointer
-											transition
-											hover:bg-yellow-300
-										"
-										>+</span
-									><span class="px-2 py-1 bg-yellow-100">2</span
-									><span
-										class="
-											px-2
-											py-1
-											bg-yellow-500
-											cursor-pointer
-											hover:bg-yellow-300
-										"
-										>-</span
-									>
-									<!-- end of counter -->
-								</div>
-								<!-- end of product details -->
-								<!-- delete product -->
-								<div class="flex items-center">
-									<button
-										class="
-											btn
-											text-xs
-											rounded-full
-											bg-red-600
-											px-2
-											py-1
-											hover:bg-red-400
-										"
-									>
-										remove
-									</button>
-								</div>
-								<!-- end of delete product -->
-							</li>
-							<!-- end of cart items -->
-							<!-- cart items -->
-							<li class="flex bg-gray-300 p-4">
-								<!-- image container -->
-								<div class="w-40 mr-2">
-									<img src="img/dumbells.jpg" alt="" />
-								</div>
-								<!-- end of image container -->
-								<!-- product details -->
-								<div class="flex-1">
-									<h3 class="text-gray-800 capitalize mb-1">
-										useful dumbell - 50kg
-									</h3>
-									<p class="mb-2 capitalize text-sm text-gray-600">
-										quantity:<span>2</span>
-									</p>
-									<!-- counter -->
-									<span class="px-2 py-1 bg-yellow-500">+</span
-									><span class="px-2 py-1 bg-yellow-100">2</span
-									><span class="px-2 py-1 bg-yellow-500">-</span>
-									<!-- end of counter -->
-								</div>
-								<!-- end of product details -->
-								<!-- delete product -->
-								<div class="flex items-center">
-									<button class="btn text-xs rounded-full bg-red-400 px-2 py-1">
-										remove
-									</button>
-								</div>
-								<!-- end of delete product -->
-							</li>
-							<!-- end of cart items -->
-							<!-- cart items -->
-							<li class="flex bg-gray-300 p-4">
-								<!-- image container -->
-								<div class="w-40 mr-2">
-									<img src="img/dumbells.jpg" alt="" />
-								</div>
-								<!-- end of image container -->
-								<!-- product details -->
-								<div class="flex-1">
-									<h3 class="text-gray-800 capitalize mb-1">
-										useful dumbell - 50kg
-									</h3>
-									<p class="mb-2 capitalize text-sm text-gray-600">
-										quantity:<span>2</span>
-									</p>
-									<!-- counter -->
-									<span class="px-2 py-1 bg-yellow-500">+</span
-									><span class="px-2 py-1 bg-yellow-100">2</span
-									><span class="px-2 py-1 bg-yellow-500">-</span>
-									<!-- end of counter -->
-								</div>
-								<!-- end of product details -->
-								<!-- delete product -->
-								<div class="flex items-center">
-									<button class="btn text-xs rounded-full bg-red-400 px-2 py-1">
-										remove
-									</button>
-								</div>
-								<!-- end of delete product -->
-							</li>
-							<!-- end of cart items -->
-						</ul>
+						<ul id="cart-menu"></ul>
 					</div>
 					<!-- end of cart menu -->
 				</nav>
@@ -248,7 +128,9 @@
 			<div class="py-10">
 				<!-- categories -->
 				<ul
+					id="categories"
 					class="
+						categories
 						flex
 						justify-around
 						uppercase
@@ -267,6 +149,8 @@
 							flex-1
 							text-center
 							bg-yellow-500
+							hover:bg-gray-700
+							transition
 						"
 					>
 						all
@@ -283,14 +167,37 @@
 					>
 						equipments
 					</li>
-					<li class="p-4 cursor-pointer flex-1 text-center">kits</li>
-					<li class="p-4 cursor-pointer flex-1 text-center">food</li>
+					<li
+						class="
+							p-4
+							cursor-pointer
+							flex-1
+							text-center
+							hover:bg-gray-700
+							transition
+						"
+					>
+						kits
+					</li>
+					<li
+						class="
+							p-4
+							cursor-pointer
+							flex-1
+							text-center
+							hover:bg-gray-700
+							transition
+						"
+					>
+						food
+					</li>
 				</ul>
 				<!-- end of categories -->
 			</div>
 			<!-- end of product head -->
 			<!-- product list -->
 			<div
+				id="product-list"
 				class="
 					grid grid-cols-1
 					justify-items-center
@@ -300,267 +207,6 @@
 				"
 			>
 				<!-- single product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
-				<div
-					class="
-						group
-						w-64
-						md:w-full
-						bg-gray-300
-						rounded-md
-						overflow-hidden
-						shadow-md
-					"
-				>
-					<!-- image container -->
-					<div class="w-full overflow-hidden">
-						<img
-							src="img/dumbells.jpg"
-							alt="dumbells"
-							class="w-full transform transition group-hover:scale-125"
-						/>
-					</div>
-					<!-- end of image container -->
-					<!-- product content -->
-					<div class="p-4">
-						<h3 class="capitalize text-gray-800 mb-2">useful dumbell - 50kg</h3>
-						<p class="text-gray-500 font-semibold mb-2">$23.99</p>
-						<button class="btn">add to cart</button>
-					</div>
-					<!-- end of product content -->
-				</div>
-				<!-- end of product -->
 			</div>
 			<!-- end of product list -->
 		</section>
