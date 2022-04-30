@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"build": "tailwindcss -i src/styles.css -o public/styles.css tsc -w "
+		"build": "tailwindcss -i src/styles.css -o public/styles.css -w",
+		"serve": "serve public"
 	},
 	"keywords": [],
 	"author": "",
@@ -12,6 +13,7 @@
 	"devDependencies": {
 		"autoprefixer": "^10.3.6",
 		"postcss": "^8.3.8",
+		"serve": "^13.0.2",
 		"tailwindcss": "^2.2.16"
 	}
 }
